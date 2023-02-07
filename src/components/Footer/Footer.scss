@@ -1,0 +1,35 @@
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  margin-top: 80px;
+  margin-bottom: 100px;
+  .top {
+    display: flex;
+    flex-direction: column;
+    span {
+      color: white;
+      font-family: "Poppins";
+      font-weight: 600;
+      font-size: 18px;
+    }
+    span:first-child {
+      font-weight: 600;
+      font-size: 52px;
+    }
+    span:last-child {
+      font-weight: 400;
+      font-size: 18px;
+      max-width: 500px;
+    }
+  }
+  .bottom {
+    display: flex;
+    align-items: center;
+    gap: 160px;
+    img {
+      flex: 1;
+      width: 100px;
+    }
+  }
+}

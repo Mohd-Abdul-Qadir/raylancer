@@ -1,0 +1,85 @@
+.Cards {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-top: 60px;
+  .card {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    height: 134px;
+    padding: 20px;
+    background: linear-gradient(
+      268.6deg,
+      #262a33 0.73%,
+      rgba(27, 30, 37, 0.5) 98.81%
+    );
+    opacity: 0.9;
+    border-radius: 10px;
+    flex: 1;
+    gap: 35px;
+    .top {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      span {
+        font-family: "Poppins";
+        line-height: 18px;
+      }
+      span:first-child {
+        color: white;
+        font-size: 17px;
+      }
+      span:last-child {
+        color: rgb(208 209 209);
+        font-size: 12px;
+      }
+    }
+    .bottom {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      gap: 10px;
+      font-size: 13px;
+      .left {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        a {
+          text-decoration: none;
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 18px;
+          color: white;
+        }
+      }
+      .right {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: flex-start;
+      }
+    }
+    .icon {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      opacity: 0.2;
+      width: 60px;
+    }
+    .effects {
+      position: absolute;
+      bottom: -20px;
+      opacity: 0.5;
+      filter: blur(50px);
+      right: -20px;
+      width: 180px;
+      height: 130px;
+    }
+  }
+}
